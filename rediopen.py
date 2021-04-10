@@ -23,12 +23,15 @@ def logo():
                                                  888
                                                  888
                                                  888
-
-Twitter:@b4walid
-Address:sec4ever
-
 '''
-   return x
+   y='''
+Coded By Boureba Walid @b4walid
+Address:sec4ever
+'''
+   print(x)
+   print(colored(y,'yellow',attrs=['bold']))
+
+
 def user_agent():
    users_agent = ['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36','Mozilla/5.0 (Linux; Android 8.0.0; SM-G930F Build/R16NW; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/74.0.3729.157 Mobile Safari/537.36','Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Safari/605.1.15','Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/88.0','Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:24.0) Gecko/20100101 Firefox/78.0','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.3809.132 Safari/537.36','Mozilla/5.0 (iPhone; CPU iPhone OS 10_0 like Mac OS X) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 YaBrowser/17.4.3.195.10 Mobile/14A346 Safari/E7FBAF','Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763','Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148','Mozilla/5.0 (Linux; Android 7.1.1; SM-T555 Build/NMF26X wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.96 Safari/537.36']
    return(random.choice(users_agent))
@@ -95,8 +98,10 @@ def payload(parameter, payloads):
 
 
 if __name__ == "__main__":
+   os.system('clear')
    logo()
-   os.system('mkdir vuln')
+   if not os.path.isdir('vuln'):
+      os.system('mkdir vuln')
    parser = argparse.ArgumentParser(description='Detect Open Redirection')
    parser.add_argument('-u', '--url', help='main url')
    parser.add_argument('-f', '--file', help='file of payloads')
