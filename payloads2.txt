@@ -1,0 +1,16 @@
+/google.com/..;/css
+//google.com/%2f..
+///google.com/%2f..
+//google.com/%2f%2e%2e
+///google.com/%2f%2e%2e
+/google.com/
+//google.com/
+https://google.com/
+//%09/google.com
+/%5cgoogle.com
+//%5cgoogle.com
+https://%5cgoogle.com
+/google%E3%80%82com
+\/\/google.com/
+/\/google.com/
+\\google.com
