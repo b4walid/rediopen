@@ -25,10 +25,10 @@ def logo():
                                                  888
 '''
    y='''
-Coded By Boureba Walid @b4walid
-Address:sec4ever
+                 Coded By Boureba Walid @b4walid
+
 '''
-   print(x)
+   print(colored(x,'red',attrs=['blink']))
    print(colored(y,'yellow',attrs=['bold']))
 
 
