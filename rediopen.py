@@ -267,4 +267,4 @@ if __name__ == "__main__":
             exit()
       else:
          print(colored('File not exist check it!!','red',attrs=['bold']))
-   print(colored('[13] Open Redirection Detected','green',attrs=['bold']))
+   print(colored('['+str(len(count))+'] Open Redirection Detected','green',attrs=['bold']))
